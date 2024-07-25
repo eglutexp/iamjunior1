@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.header {
+    grid-area: header;
+    background-color: #283593;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: Fixed (1,920px)px;
+    height: Hug (120px)px;
+    padding: 32px 320px 32px 320px;
+    gap: 0px;
+    justify: space-between;
+    opacity: 0px;
+    
+}
+
+.ikona {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.sarasas {
+    display:flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+
+
+}
+.header-right {
+    justify-self: end;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    width: 79px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(241, 90, 36, 1);
+    padding: 5px 10px;
+    background-color: white;
+    color: orange;
+    margin left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+    
+    .header-right button:hover {
+        background-color: #45a049;
+    }
+    
+.saraso-elementas .link:hover{
+    color: orange;
+}
+
+.grid-vaikas {
+display: grid;
+list-style: none;
+gap: 40px;
+margin: 0;
+padding: 0;
+justify-self: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+}
+
+.pavadinimas {
+    justify-self: left;
+    width: Hug (1,180px)px;
+    height: Hug (608px)px;
+    gap: 52px;
+    opacity: 0px;
+}
+.grid-dezutes {
+    display: grid;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    display: grid;
+
+}
+.dezutes {
+    display:flex;
+    list-style:none'
+    width: 100%; height:300px
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke ;
+}
+
+.flex-container.row {
+    flex-direction: column;
+}
+
+.flex-item {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+.logo { align-items:center;}
+future {    font-weight: 900; color: #1a1a1a; margin: 20px; text-decoration: none; }
+.a:link { text-decoration: none;}
+a:visited: { text-decoration: none;}
+.topelement .link:hover {color: orangered; text-decoration: under;}
+nav {text-align: center; width:100%; justify-content: center;}
+.link { color: #4e4b66;}
+.contact { width: 175px; height: 56px; border-radius: 24px; gap: 10px;}
+padding-top:16px; padding-bottom: 16px; padding-left:36px; padding-right:36px;
+text-align: center; font-size: 14px; color: #f15a24;
+border-color: #f15a24}
+.gridas { display: grid; margin-top: 20px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+justify-items: center;}
+.hhh { font-size: 61px; align-items: center; margin: 0; font-weight: 900;}
+.uzrasas {display:grid; align-items:center; margin: 0; font-size: 22px;}
+.read [width:174px; height: 56px; background-color: #f15a24; color: white; border: 0;
+align-items; center; margin-top:10px;
+padding-top: 16px; padding-bottom:16px; padding-left:48px; padding-right:48px;]
+foto {object-fit: fill; width: 100%;}
+.dezutes {display:flex; list-style: none;
+width: 100%; height:300px; grid-gap: 10px; justify-content: space-between;}
+.vaikas { width:305px; height: 24px; background-color: #f7f7f7; gap:20px; border-radius:20px; padding: 32px;}
+.pavadinimas {font-size: 25px; color: #1a1a1a; margin-top: 30px;}
+.apibudinimas {font-size: 16px; color:#1a1a1a; margin-top: 50px;}
+
+@media (max-width:1355px)
+{.gridas {grid-template-columns: 1fr;
+grid-template-rows: auto; text-align: center;}
+.hhh {grid-area: 1/1/2/3; max-width: 578px;}
+.uzrasasc{grid-area: 2/1/3/2;}
+.read {justify-self: center;}}
+
+@media (max-width: 1120px)
+{.top {display: none;}
+.hhh { font-size: 49px;}
+.read {padding-left: 32px; padding-right: 32px;}}

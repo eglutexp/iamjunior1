@@ -1,0 +1,42 @@
+$primary-color: #ff6a3e;
+$secondary-color: #ffba43;
+
+body {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  
+  .button {
+    @include border-radius(10px);
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    background-color: $primary-color;
+    
+    ul {
+      list-style: none;
+      
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        
+        a {
+          text-decoration: none;
+          color: white;
+          
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }

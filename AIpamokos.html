@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egle's Personal Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #35424a;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        h1, h2, h3 {
+            color: #35424a;
+        }
+        .btn {
+            display: inline-block;
+            background: skyblue;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: red;
+        }
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            opacity: 0.8;
+            border-radius: 50%;
+            animation: fall 10s linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Egle's Personal Webpage</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="about" class="main-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Egle. I run my own online business specializing in teeth whitening products. In addition to my business, I work as an IT company administrator. In my free time, I enjoy sewing, reading, and traveling.</p>
+        </div>
+
+        <div id="projects" class="main-content">
+            <h2>Projects</h2>
+            <p>Details about my projects will be available soon. Stay tuned!</p>
+        </div>
+
+        <div id="blog" class="main-content">
+            <h2>Blog</h2>
+            <p>My blog is coming soon where I'll share my thoughts on various topics. Check back later for updates!</p>
+        </div>
+
+        <div id="contact" class="main-content">
+            <h2>Contact</h2>
+            <p>You can reach me through my social media profiles:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/CrestJumsEgle?locale=lt_LT" target="_blank">Facebook</a></li>
+                <li><a href="https://www.vinted.lt/member/41316763" target="_blank">Vinted</a></li>
+            </ul>
+        </div>
+        <button class="btn" onclick="startSnow()">Start Snow</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Egle's Personal Webpage</p>
+    </footer>
+
+    <script>
+        function startSnow() {
+            for (let i = 0; i < 100; i++) {
+                let snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.animationDuration = Math.random() * 3 + 5 + 's';
+                document.body.appendChild(snowflake);
+            }
+        }
+    </script>
+</body>
+</html>
+
